@@ -27,15 +27,15 @@ public class EscapeRoom {
             tentativas +=1;
             if(palpite < numero && tentativas < 5){
                 System.out.println("\nTente um número maior...");
-            }else if(palpite > numero && tentativas <5){
+            }else if(palpite > numero && tentativas < 5){
                 System.out.println("\nTente um número menor...");
-            }else if(tentativas ==5){
+            }else if(tentativas == 5 && numero != palpite){
                 System.out.println("\nVocê está morto. O Guardião dos Portais Infernais te matou com seus poderes mágicos e as Succubus comeram sua carne vivo. GAME OVER!!! O Numero da Morte é: "+ numero);
                 break;
             }else{
                 System.out.println("\nVocê venceu o Guardião dos Portais Infernais e agora o seu inimigo está morto. Você concluiu sua missão com exito!!! O Numero da Vitória é: " + numero);
                 break;
             }
-        }while(tentativas<=5 && numero != palpite);
+        }while(tentativas < 5 && numero != palpite);
     }
 }
